@@ -1,6 +1,6 @@
 # Child-to-Parent-trigger-update
 trigger Conaccupdate on Contact (after insert,after update ) {
-   list<account> acclst = new list <account>();
+   list <account> acclst = new list <account>();
     list<id> lid = new list<id>();
    
     for(contact c : trigger.new){
